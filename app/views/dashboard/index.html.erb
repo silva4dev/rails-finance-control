@@ -1,0 +1,36 @@
+<h1>Dashboard</h1>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>Charts</h4>
+	</div>
+	<div class="panel-body">
+		<%= bar_chart @bills.group(:value).count %>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>Charts</h4>
+	</div>
+	<div class="panel-body">
+		<%= column_chart @bills.group(:value).count %>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>Charts</h4>
+	</div>
+	<div class="panel-body">
+		<%= area_chart @bills.group(:value).count %>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>Charts</h4>
+	</div>
+	<div class="panel-body">
+		<%= pie_chart @bills.group(:value).count %>
+	</div>
+</div>
